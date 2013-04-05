@@ -12,8 +12,8 @@
 <script src="scripts/MetroJs.lt.js" type="text/javascript"></script>
 <script src="scripts/jquery.fancybox-1.3.4.js" type="text/javascript" charset="utf-8"></script>
 <script src="scripts/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
-<script src="scripts/jquery.jplayer.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="scripts/hoverintent.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/jquery.jplayer.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="scripts/organictabs.jquery.js" type="text/javascript" charset="utf-8"></script>
 <!--[if lt IE 9]>
   <style type="text/css">
@@ -32,266 +32,425 @@
 <![endif]-->
 <script src="scripts/javascript.js" type="text/javascript"></script>
 <script src="scripts/mediaplayer.js" type="text/javascript"></script>
+<style type="text/css">
+.masked {
+    overflow: hidden;
+    color: #fff;
+    width: 960px;
+    height: 640px;
+    /*background: url(background.png);*/
+    /*-webkit-mask-image: url(mask/heart4.png);*/
+    -webkit-mask-image: url(mask/tile-mask-webkit.png); /* FAV HEART */
+    /*-webkit-mask-image: url(mask/heart7.svg);*/
+    -webkit-mask-size: auto 100%;
+    -webkit-mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+}
+
+#tile-wrapper {
+	height: 960px;
+	background-image: url(mask/tile-background-heart.jpg); 
+	background-size: 960px 960px; 
+	background-position: center top;
+	background-repeat:no-repeat;
+}
+
+</style>
+
+
 </head>
 <body>
 <div id="bodypat">
 <section id="container">
-    <div id="colorchanger">
-    <a href="?theme=blue" class="cblue cbox" title="Blue Theme"><span class="blue">Blue</span></a>
-    <a href="?theme=red" class="cred cbox" title="Red Theme"><span class="red">Red</span></a>
-    <a href="?theme=green" class="cgreen cbox" title="Green Theme"><span class="green">Green</span></a>
-    <a href="?theme=magenta" class="cmagenta cbox" title="Magenta Theme"><span class="magenta">Magenta</span></a>
-    <a href="?theme=purple" class="cpurple cbox" title="Purple Theme"><span class="purple">Purple</span></a>
-    <a href="?theme=teal" class="cteal cbox" title="Teal Theme"><span class="teal">Teal</span></a>
-    <a href="?theme=lime" class="clime cbox" title="Lime Theme"><span class="lime">Lime</span></a>
-    <a href="?theme=brown" class="cbrown cbox" title="Brown Theme"><span class="brown">Brown</span></a>
-    <a href="?theme=pink" class="cpink cbox" title="Pink Theme"><span class="pink">Pink</span></a>
-    <a href="?theme=mango" class="cmango cbox" title="Mango Theme"><span class="mango">Mango</span></a>
-    <h4>Theme Color Selector</h4>
-    </div>
 <!-- BEGIN HEADER -->
-<header class="clearfix">
-<!-- BEGIN LOGO -->
-<a id="headerlink" href="#" title="home"><img id="logo" src="images/logo.png" alt="logo"/><span id="sitename">Matrix</span></a>
-<!-- END LOGO -->
-
-<!-- BEGIN NAVIGATION -->
-<nav>
-<ul id="nav" class="clearfix">
-<!-- Menu Item 1 -->
-	<li class="current"><a href="index.html" title="Home"><span>Home</span></a></li>
-<!-- Menu Item 2 -->
-    <li>
-    	<a href="#" title="Portfolio"><span>Portfolio</span></a>
-        <ul>
-        	<li><a href="portfoliotile-large.html" title="Portfolio"><span>Tile - Large</span></a></li>
-            <li><a href="portfoliotile-medium.html" title="Portfolio"><span>Tile - Medium</span></a></li>
-            <li><a href="portfoliotile-small.html" title="Portfolio"><span>Tile - Small</span></a></li>
-            <li><a href="portfoliolist.html" title="Portfolio"><span>Portfolio List</span></a></li>
-            <li><a href="singleportfolio.html" title="Portfolio"><span>Single Item</span></a></li>
-        </ul>
-    </li>
-<!-- Menu Item 3 -->
-    <li><a href="#" title="Blog"><span>Blog</span></a>
-    	<ul>
-        	<li><a href="blogtile-large.html" title="Blog"><span>Tile - Large</span></a></li>
-            <li><a href="blogtile-medium.html" title="Blog"><span>Tile - Medium</span></a></li>
-        	<li><a href="bloglist.html" title="Blog List"><span>Blog List</span></a></li>
-        	<li><a href="singleblogpost-1.html" title="Article 1"><span>Single Post</span></a></li>
-        </ul>
-    </li>
-<!-- Menu Item 4 -->
-    <li>
-    	<a href="#" title="Features"><span>Features</span></a>
-        <ul>
-        	<li><a href="features-main.html" title="Features"><span>Main Features</span></a></li>
-            <li><a href="features-columns.html" title="Features"><span>Columns</span></a></li>
-            <li><a href="features-content.html" title="Features"><span>Content Area</span></a></li>
-        </ul>
-    </li>
-<!-- Menu Item 5 -->
-    <li><a href="aboutus.html" title="About"><span>About</span></a></li>
-<!-- Menu Item 6 -->
-    <li><a href="contact.html" title="Contact"><span>Contact</span></a></li>
-</ul>
-</nav>
-<!-- END NAVIGATION -->
-</header>
 <!-- END HEADER -->
 
 <!-- BEGIN MAIN PAGE CONTENT -->
-<section class="mainpage">
-	<!-- BEGIN TOGGLE CONTENT -->
-	<div class="toggle-button"><span class="toggle-indicator">+</span></div>
-    
-    <div class="toggle-content close">
-        <div class="flexslider mainslide">
-        <ul class="slides">
-            <li>
-            <img src="images/slideimg1.png" alt="Responsive" />
-            <p class="flex-title">Responsive</p>
-            </li>
-            <li>
-            <img src="images/slideimg2.png" alt="Tile Design" />
-            <p class="flex-title">Tile Design</p>
-            </li>
-            <li>
-            <img src="images/slideimg3.png" alt="Customizability" />
-            <p class="flex-title">Customizability</p>
-            </li>
-        </ul>
-        </div><!-- end .flexslider -->
-    
-    <div class="quote-bg1"><div class="quote-w">Hello! This is a Metro UI-inspired template which brings a new web-browsing experience to the users. To further improve it, feedbacks are greatly welcomed!</div></div>
-    
-    </div><!-- end .toggle-content -->
-    <!-- END TOGGLE CONTENT -->
-</section><!-- end #mainpage -->
 
 <div id="loader"></div><!-- loader image for AJAX -->
 
+
+
 <section id="mainpage-mos">
+
+<section id="header">
+
+	
+
+</section>
+
+<div id="tile-wrapper">
+<div class="sih-filler" style="padding-top:72px"></div>
+
 <!-- BEGIN TILE CONTENT -->
 <section id="content-mos" class="centered clearfix">
-<!-- Tile 1 -->
-    <div class="tile medium exclude">
+
+
+
+<div>
+
+<!-- BEGIN SVG WRAPPER -->
+<svg width="960px" height="640px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <mask id="mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
+        <image width="960px" height="640px" xlink:href="mask/tile-mask-webkit.png"></image>
+    </mask>
+</defs>
+<foreignObject width="960px" height="640px" style="mask: url(#mask);">
+<div class="masked">
+
+<!-- Small 1 Filler Top Left corner -->
+    <div class="tile small live exclude" data-stops="0,100%" data-speed="1000" data-delay="1500">
     	<div class="live-front red">
-        	<span class="tile-text">Dark theme</span>
+        <span class="tile-text">Solid Color</span>
+        </div>
+        <div class="live-back green">
+        <span class="tile-text">No Hover Effect</span>
         </div>
     </div>
 
-<!-- Tile 2 -->
-<a href="#audio-1" class="lightbox" rel="section">
-    <div class="tile medium">
-    <img class="live-img" src="images/placeholder/medium_blank.png" alt="Audio 1"/>
-        <span class="tile-date limetxt"><span class="date">01</span><span class="month">July</span></span>
-        <span class="tile-cat lime">Audio</span>
+<!-- Medium 2 Top Left -->
+<a href="#article-2" class="lightbox" rel="section">
+    <div class="tile medium live" data-stops="0,75%,100%" data-speed="750" data-delay="1500">
+    	<div class="live-front">
+        	<img class="live-img" src="images/placeholder/medium_blank.png" alt="Article 2" />
+        </div>
+        <div class="live-back">
+        	<img class="live-img" src="images/placeholder/medium_blank.png" alt="Article 2" />
+        </div>
+        <span class="tile-date limetxt"><span class="date">06</span><span class="month">July</span></span>
+        <span class="tile-cat lime">Cartoon Design</span>
     </div>
 </a>
 	<!-- Lightbox Article Preview -->
     <div class="tile-pre">
-    <article id="audio-1" class="lb-article" data-lbcolor="#8cbe29">
-    <div class="lb-audio">
-    <img class="tile-pre-img" src="images/placeholder/blog_pre_blank.png" alt="Article Three" />
-  
-	<!--container for everything-->
-<div id="jp_container_1" class="jp-audio">
- 
-    <!--container in which our video will be played-->
-    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-     
-    <!--main containers for our controls-->
-    <div class="jp-gui">
-        <div class="jp-interface">
-            <div class="jp-controls-holder">
-                <!--play and pause buttons-->
-                <a href="javascript:;" class="jp-play" tabindex="1">play</a>
-                <a href="javascript:;" class="jp-pause" tabindex="1">pause</a>
-                <span class="separator sep-1"></span>
-                 
-                <!--progress bar-->
-                <div class="jp-progress">
-                    <div class="jp-seek-bar">
-                        <div class="jp-play-bar"><span></span></div>
-                    </div>
-                </div>
-                 
-                <!--time notifications-->
-                <div class="jp-current-time"></div>
-                <span class="time-sep">/</span>
-                <div class="jp-duration"></div>
-                <span class="separator sep-2"></span>
-                 
-                <!--mute / unmute toggle-->
-                <a href="javascript:;" class="jp-mute" tabindex="2" title="mute">mute</a>
-                <a href="javascript:;" class="jp-unmute" tabindex="2" title="unmute">unmute</a>
-                 
-                <!--volume bar-->
-                <div class="jp-volume-bar">
-                    <div class="jp-volume-bar-value"><span class="handle"></span></div>
-                </div>
-                <span class="separator sep-2"></span>
-                 
-            </div><!--end jp-controls-holder-->
-        </div><!--end jp-interface-->
-    </div><!--end jp-gui-->
-     
-    <!--unsupported message-->
-    <div class="jp-no-solution">
-        <span>Update Required</span>
-        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/">Flash plugin</a>.
-    </div>
-     
-</div><!--end jp_container_1-->
-
+    <article id="article-2" class="lb-article" data-lbcolor="#8cbe29">
+    <div class="article-img">
+    	<div class="flexslider postslide">
+        <ul class="slides">
+        <li>
+    	<img class="tile-pre-img" src="images/placeholder/blog_pre_blank.png" alt="Article Two" />
+        </li>
+        <li>
+    	<img class="tile-pre-img" src="images/placeholder/blog_pre_blank.png" alt="Article Two" />
+        </li>
+        </ul>
+        </div>
     </div>
     <div class="article-date limetxt"><span class="date">06</span><span class="month">July</span></div>
-    <h1 class="lb-title"><a href="singleblogpost-1.html">Self-hosted Audio File</a></h1>
-    <span class="postcat limetxt">Audio</span>
+    <h1 class="lb-title"><a href="singleblogpost-1.html">This is the title of Article Two</a></h1>
+    <span class="postcat limetxt">Cartoon Design</span>
     <div class="lb-excerpt">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis sollicitudin aliquet. Nullam ut sapien eros, aliquet gravida turpis. Cras nec risus magna. Morbi laoreet molestie odio sed ultrices. Maecenas eget elit orci. Etiam rhoncus urna vitae neque accumsan et vehicula dolor varius. Praesent tellus velit. <b>This image is a fantastic work by <a href="http://www.behance.net/madsberg">Mads Berg</a></b>...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis sollicitudin aliquet. Nullam ut sapien eros, aliquet gravida turpis. Cras nec risus magna. Morbi laoreet molestie odio sed ultrices. Maecenas eget elit orci. Etiam rhoncus urna vitae neque accumsan et vehicula dolor varius. Praesent tellus velit.</p>
         <p><a class="exp-button" href="singleblogpost-1.html">Read More &#8594;</a></p>
     </div>
     </article>
     </div>
 
-<!-- Tile 3 -->
-    <div class="tile medium live exclude" data-mode="flip" data-stops="100%" data-speed="500" data-delay="3000">
-    	<div class="live-front teal">
-        	<span class="tile-text">Audio demo</span>
+
+<!-- Medium 3 Top Right -->
+<a href="#article-3" class="lightbox" rel="section">
+    <div class="tile medium">
+        	<img class="live-img" src="images/placeholder/medium_blank.png" alt="Article 3" />
+        <span class="tile-date tealtxt"><span class="date">01</span><span class="month">July</span></span>
+        <span class="tile-cat teal">Graphic Design</span>
+    </div>
+</a>
+	<!-- Lightbox Article Preview -->
+    <div class="tile-pre">
+    <article id="article-3" class="lb-article" data-lbcolor="#00aaad">
+    <div class="article-img">
+    	<img class="tile-pre-img" src="images/placeholder/blog_pre_blank.png" alt="Article Three" />
+    </div>
+    <div class="article-date tealtxt"><span class="date">01</span><span class="month">July</span></div>
+    <h1 class="lb-title"><a href="singleblogpost-1.html">This is the title of Article Three</a></h1>
+    <span class="postcat tealtxt">Graphic Design</span>
+    <div class="lb-excerpt">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis sollicitudin aliquet. Nullam ut sapien eros, aliquet gravida turpis. Cras nec risus magna. Morbi laoreet molestie odio sed ultrices. Maecenas eget elit orci. Etiam rhoncus urna vitae neque accumsan et vehicula dolor varius. Praesent tellus velit.</p>
+        <p><a class="exp-button" href="singleblogpost-1.html">Read More &#8594;</a></p>
+    </div>
+    </article>
+    </div>
+
+<!--  Small 4 Filler Top Right Corner -->
+    <div class="tile small live exclude" data-stops="0,100%" data-speed="1000" data-delay="1500">
+    	<div class="live-front red">
+        <span class="tile-text">Solid Color</span>
         </div>
-        <div class="live-back blue">
-        	<span class="tile-text">AJAX Pagination</span>
+        <div class="live-back green">
+        <span class="tile-text">No Hover Effect</span>
         </div>
     </div>
+
+
+<!-- Medium 4 Upper Mid Left -->
+<a href="#article-3" class="lightbox" rel="section">
+    <div class="tile medium">
+        	<img class="live-img" src="images/placeholder/medium_blank.png" alt="Article 3" />
+        <span class="tile-date tealtxt"><span class="date">01</span><span class="month">July</span></span>
+        <span class="tile-cat teal">Graphic Design</span>
+    </div>
+</a>
+	<!-- Lightbox Article Preview -->
+    <div class="tile-pre">
+    <article id="article-3" class="lb-article" data-lbcolor="#00aaad">
+    <div class="article-img">
+    	<img class="tile-pre-img" src="images/placeholder/blog_pre_blank.png" alt="Article Three" />
+    </div>
+    <div class="article-date tealtxt"><span class="date">01</span><span class="month">July</span></div>
+    <h1 class="lb-title"><a href="singleblogpost-1.html">This is the title of Article Three</a></h1>
+    <span class="postcat tealtxt">Graphic Design</span>
+    <div class="lb-excerpt">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis sollicitudin aliquet. Nullam ut sapien eros, aliquet gravida turpis. Cras nec risus magna. Morbi laoreet molestie odio sed ultrices. Maecenas eget elit orci. Etiam rhoncus urna vitae neque accumsan et vehicula dolor varius. Praesent tellus velit.</p>
+        <p><a class="exp-button" href="singleblogpost-1.html">Read More &#8594;</a></p>
+    </div>
+    </article>
+    </div>
+
+
+<!-- Large 5 Center -->
+<a href="#article-1" class="lightbox" rel="section">
+    <div class="tile large live" data-stops="0,100%" data-speed="3000" data-delay="500" data-direction="horizontal" data-stack="true">
+        <div class="live-front">
+        	<img class="live-img" src="images/placeholder/large_blank.png" alt="Article 1"/>
+        </div>
+        <div class="live-back">
+        	<img class="live-img" src="images/placeholder/large_blank.png" alt="Article 1"/>
+        </div>
+        <!-- <span class="tile-date redtxt"><span class="date">09</span><span class="month">July</span></span> -->
+        <span class="tile-cat red">Exercise = Charity.<br/>What?  How?</span>
+    </div>
+</a>
+	<!-- Lightbox Article Preview -->
+    <div class="tile-pre">
+    <article id="article-1" class="lb-article" data-lbcolor="#e61400">
+    <div class="article-img">
+        <div class="flexslider postslide">
+        <ul class="slides">
+    	<li>
+        <img class="tile-pre-img" src="images/placeholder/blog_pre_blank.png" alt="Article 1" />
+        </li>
+        <li>
+        <img class="tile-pre-img" src="images/placeholder/blog_pre_blank.png" alt="Article 1" />
+        </li>
+        </ul>
+        </div>
+    </div>
+    <div class="article-date redtxt"><span class="date">09</span><span class="month">July</span></div>
+    <h1 class="lb-title"><a href="singleblogpost-1.html">This is the title of Article 1</a></h1>
+    <span class="postcat redtxt">Illustration</span>
+    <div class="lb-excerpt">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis sollicitudin aliquet. Nullam ut sapien eros, aliquet gravida turpis. Cras nec risus magna. Morbi laoreet molestie odio sed ultrices. Maecenas eget elit orci. Etiam rhoncus urna vitae neque accumsan et vehicula dolor varius. Praesent tellus velit.</p>
+        <p><a class="exp-button" href="singleblogpost-1.html">Read More &#8594;</a></p>
+    </div>
+    </article>
+    </div>
+
+<!-- Small 6 Video Upper Center Mid Right -->    
+<a href="#video-1" class="lightbox" rel="section">
+    <div class="tile small live" data-mode="flip" data-stops="100%" data-speed="750" data-delay="3000">
+    	<div class="live-front">
+        	<img class="live-img" src="images/articles/video1.jpg" alt="Video 1" />
+        </div>
+        <div class="live-back blue">
+        	<img class="live-img" src="images/video.png" alt="Video Icon" />
+        </div>
+    </div>
+</a>
+    <!-- Lightbox Article Preview -->
+    <div class="tile-pre"> 
+    <article id="video-1" class="lb-article" data-lbcolor="#19a2de">  
+    <div class="lb-video"> 
+<iframe src="http://player.vimeo.com/video/3114617?loop=1" width="640" height="272"></iframe> <p><a href="http://vimeo.com/3114617">SCINTILLATION</a> from <a href="http://vimeo.com/chassaingxavier">Xavier Chassaing</a> on <a href="http://vimeo.com">Vimeo</a>.</p> <p>This is an experimental film made up of over 35,000 photographs. It combines an innovative mix of stop motion and live projection mapping techniques. <br /> <br /> Directed by<br /> chassaing.xavier@gmail.com<br /> <br /> Music by <br /> http://www.myspace.com/fedaden</p>
+    </div>
+    </article>
+    </div>
+
+
+<!-- Small 7 Filler Upper Mid Right -->
+    <div class="tile small live exclude" data-stops="0,100%" data-speed="1000" data-delay="1500">
+    	<div class="live-front red">
+        <span class="tile-text">Solid Color</span>
+        </div>
+        <div class="live-back green">
+        <span class="tile-text">No Hover Effect</span>
+        </div>
+    </div>
+
+
+<!-- Medium 8 Bottom Mid Left -->
+<a href="#article-2" class="lightbox" rel="section">
+    <div class="tile medium live" data-stops="0,75%,100%" data-speed="750" data-delay="1500">
+    	<div class="live-front">
+        	<img class="live-img" src="images/placeholder/medium_blank.png" alt="Article 2" />
+        </div>
+        <div class="live-back">
+        	<img class="live-img" src="images/placeholder/medium_blank.png" alt="Article 2" />
+        </div>
+        <span class="tile-date limetxt"><span class="date">06</span><span class="month">July</span></span>
+        <span class="tile-cat lime">Cartoon Design</span>
+    </div>
+</a>
+	<!-- Lightbox Article Preview -->
+    <div class="tile-pre">
+    <article id="article-2" class="lb-article" data-lbcolor="#8cbe29">
+    <div class="article-img">
+    	<div class="flexslider postslide">
+        <ul class="slides">
+        <li>
+    	<img class="tile-pre-img" src="images/placeholder/blog_pre_blank.png" alt="Article Two" />
+        </li>
+        <li>
+    	<img class="tile-pre-img" src="images/placeholder/blog_pre_blank.png" alt="Article Two" />
+        </li>
+        </ul>
+        </div>
+    </div>
+    <div class="article-date limetxt"><span class="date">06</span><span class="month">July</span></div>
+    <h1 class="lb-title"><a href="singleblogpost-1.html">This is the title of Article Two</a></h1>
+    <span class="postcat limetxt">Cartoon Design</span>
+    <div class="lb-excerpt">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis sollicitudin aliquet. Nullam ut sapien eros, aliquet gravida turpis. Cras nec risus magna. Morbi laoreet molestie odio sed ultrices. Maecenas eget elit orci. Etiam rhoncus urna vitae neque accumsan et vehicula dolor varius. Praesent tellus velit.</p>
+        <p><a class="exp-button" href="singleblogpost-1.html">Read More &#8594;</a></p>
+    </div>
+    </article>
+    </div>
+    
+<!-- Small 9 Lower Center Mid Right -->
+<a href="#portfolio-1" class="lightbox" rel="section">
+    <div class="tile small">
+    <img class="live-img" src="images/placeholder/small_blank.png" alt="Project One"/>
+    </div>
+</a>
+	<!-- Lightbox Article Preview -->
+    <div class="tile-pre">
+    <article id="portfolio-1" class="lb-portfolio" data-lbcolor="#e61400">
+    <div class="portfolio-img">
+    <img class="tile-pre-img" src="images/placeholder/portfolio_pre_blank.png" alt="Project One" />
+    </div>
+    <div class="lb-port-cont">
+        <h1 class="lb-project"><a href="singleportfolio.html">Project One</a></h1>
+        <span class="projectcat redtxt">Illustration</span>
+        <div class="lb-desc">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis sollicitudin aliquet. Nullam ut sapien eros, aliquet gravida turpis. Cras nec risus magna. Morbi laoreet molestie odio sed ultrices. Maecenas eget elit orci. Etiam rhoncus urna vitae neque accumsan et vehicula dolor varius. Praesent tellus velit.</p>
+            <p><a class="exp-button" href="singleportfolio.html">View More &#8594;</a></p>
+        </div>
+    </div>
+    </article>
+    </div>
+    
+<!-- Small 10 Lower Mid Right -->
+    <div class="tile small live exclude" data-stops="0,100%" data-speed="1000" data-delay="1500">
+    	<div class="live-front red">
+        <span class="tile-text">Solid Color</span>
+        </div>
+        <div class="live-back green">
+        <span class="tile-text">No Hover Effect</span>
+        </div>
+    </div>
+
+
+<!-- Medium 11 Filler Left Bottom Corner -->
+    <div class="tile medium live exclude" data-stops="0,100%" data-speed="1000" data-delay="1500">
+    	<div class="live-front red">
+        <span class="tile-text">Solid Color</span>
+        </div>
+        <div class="live-back green">
+        <span class="tile-text">No Hover Effect</span>
+        </div>
+    </div>
+    
+<!-- Small 12 Bottom Center Mid Left -->
+<a href="#portfolio-3" class="lightbox" rel="section">
+    <div class="tile small">
+    <img class="live-img" src="images/placeholder/small_blank.png" alt="Project Three"/>
+    </div>
+</a>
+    <!-- Lightbox Article Preview -->
+    <div class="tile-pre">
+    <article id="portfolio-3" class="lb-portfolio" data-lbcolor="#e61400">
+    <div class="portfolio-img">
+    <img class="tile-pre-img" src="images/placeholder/portfolio_pre_blank.png" alt="Project Three" />
+    </div>
+    <div class="lb-port-cont">
+        <h1 class="lb-project"><a href="singleportfolio.html">Project Three</a></h1>
+        <span class="projectcat redtxt">Illustration</span>
+        <div class="lb-desc">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis sollicitudin aliquet. Nullam ut sapien eros, aliquet gravida turpis. Cras nec risus magna. Morbi laoreet molestie odio sed ultrices. Maecenas eget elit orci. Etiam rhoncus urna vitae neque accumsan et vehicula dolor varius. Praesent tellus velit.</p>
+            <p><a class="exp-button" href="singleportfolio.html">View More &#8594;</a></p>
+        </div>
+    </div>
+    </article>
+    </div>
+
+<!-- Medium 13 Bottom Center Mid Right -->
+<a href="#article-3" class="lightbox" rel="section">
+    <div class="tile medium">
+        	<img class="live-img" src="images/placeholder/medium_blank.png" alt="Article 3" />
+        <span class="tile-date tealtxt"><span class="date">01</span><span class="month">July</span></span>
+        <span class="tile-cat teal">Graphic Design</span>
+    </div>
+</a>
+	<!-- Lightbox Article Preview -->
+    <div class="tile-pre">
+    <article id="article-3" class="lb-article" data-lbcolor="#00aaad">
+    <div class="article-img">
+    	<img class="tile-pre-img" src="images/placeholder/blog_pre_blank.png" alt="Article Three" />
+    </div>
+    <div class="article-date tealtxt"><span class="date">01</span><span class="month">July</span></div>
+    <h1 class="lb-title"><a href="singleblogpost-1.html">This is the title of Article Three</a></h1>
+    <span class="postcat tealtxt">Graphic Design</span>
+    <div class="lb-excerpt">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis sollicitudin aliquet. Nullam ut sapien eros, aliquet gravida turpis. Cras nec risus magna. Morbi laoreet molestie odio sed ultrices. Maecenas eget elit orci. Etiam rhoncus urna vitae neque accumsan et vehicula dolor varius. Praesent tellus velit.</p>
+        <p><a class="exp-button" href="singleblogpost-1.html">Read More &#8594;</a></p>
+    </div>
+    </article>
+    </div>
+    
+<!-- Small 14 Filler Left Bottom Corner -->
+    <div class="tile small live exclude" data-stops="0,100%" data-speed="1000" data-delay="1500">
+    	<div class="live-front red">
+        <span class="tile-text">Solid Color</span>
+        </div>
+        <div class="live-back green">
+        <span class="tile-text">No Hover Effect</span>
+        </div>
+    </div>
+    
+
+
+
+
+<!-- END SVG WRAPPER --> 
+</div> 
+</foreignObject>
+</svg>
+
+<!-- end pad tile -->
+</div>
     
 <!-- END TILE CONTENT -->
 </section><!-- end #content-mos -->
 
+<!--  END TILE WRAPPER -->
+ </div>
+
+
 <!-- BEGIN AJAX PAGINATION -->
 <div class="clearfix ajax-pagination">
-<a href="index.html" class="prev"></a>
+<a href="index2.html" class="next"></a>
 </div>
 <!-- END AJAX PAGINATION -->
 
+
+
+
 </section><!-- end #mainpage-mos -->
 
-<section class="mainpage">
-<!-- BEGIN TOGGLE CONTENT -->
-<div class="toggle-button"><span class="toggle-indicator">+</span></div>
 
-<div class="toggle-content close clearfix">
-<!-- Item 1 -->
-    <div class="fixed-medium">
-        <div class="highlights">
-        <img class="themecolor" src="images/responsive.png" alt="Responsive Design" />
-        </div>
-        <div class="highlights-txt">
-        <h2>Responsive Design</h2>
-        <p>The template will automatically resize to fit the browser according to its width. So, this template works not just on your desktop monitor, but your tablet or mobile phone as well!</p>
-        </div>
-    </div>
-<!-- Item 2 -->
-    <div class="fixed-medium">
-        <div class="highlights">
-        <img class="themecolor" src="images/livetiles.png" alt="Live Tiles" />
-        </div>
-        <div class="highlights-txt">
-        <h2>Live Tiles</h2>
-        <p>As inspired by Metro UI, these 'Live' tiles can display more information without utilizing more screen space. Hence, it is not just the perfect solution for small-screened mobile devices, but also attractive.</p>
-        </div>
-    </div>
-<!-- Item 3 -->
-    <div class="fixed-medium last">
-        <div class="highlights">
-        <img class="themecolor" src="images/customizability.png" alt="Customizability" />
-        </div>
-        <div class="highlights-txt">
-        <h2>Customizability</h2>
-        <p>Comes pre-loaded with 10 colours and easy-to-use colour tags, as well as multiple-sized tiles which automatically arrange themselves to fit the screen, you can create any layout you can imagine.</p>
-        </div>
-    </div>
-    
-</div><!-- end .toggle-content -->
-<!-- END TOGGLE CONTENT -->
-
-</section><!-- end .main-page -->
 <!-- END MAIN PAGE CONTENT -->
 
 <!-- BEGIN FOOTER -->
-<footer class="clearfix">
-
-<div id="footer-social">
-<a href="#"><span class="behance-mini"></span></a>
-<a href="#"><span class="twitter-mini"></span></a>
-<a href="#"><span class="facebook-mini"></span></a>
-<a href="#"><span class="linkedin-mini"></span></a>
-<a href="#"><span class="pinterest-mini"></span></a>
-<a href="#"><span class="dribbble-mini"></span></a>
-</div><!-- end #footer-social -->
-
-<small>Copyright &#169; 2012 Matrix</small>
-</footer>
 <!-- END FOOTER -->
 
 </section><!-- end #container -->
